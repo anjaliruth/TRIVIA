@@ -18,9 +18,9 @@ async function getData() {
  
 
   // Fetch data from API
-  //${numOfQChoice}
-  let response = await fetch(`https://opentdb.com/api.php?amount=1&category=${categoryChoice}&difficulty=${difficultyChoice}&type=multiple`);
-  await console.log(response)
+  //
+  let response = await fetch(`https://opentdb.com/api.php?amount=${numOfQChoice}&category=${categoryChoice}&difficulty=${difficultyChoice}&type=multiple`);
+ console.log(response)
   data = await response.json();
   console.log(incorrectAnswers);
 
@@ -137,6 +137,14 @@ function resetGame() {
   // Reset global variables
   currentQuestion = 0;
   score = 0;
+
+  //reset the dropdown menus to 0
+  let categoryDropdown = document.querySelector("#category");
+  categoryDropdown.selectedIndex = 0;
+  let difficultyDropdown = document.querySelector("#difficulty");
+  difficultyDropdown.selectedIndex = 0;
+  let noQDropdown = document.querySelector("#noQ");
+  noQDropdown.selectedIndex = 0;
 
   // Bring back the dropdown options and start button
   document.querySelector(".options-container").style.display = "block";

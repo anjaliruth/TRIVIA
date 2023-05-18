@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0f0f0f;
+    color: #00f6ff;
+}
+
+body {
+
+    color: #00f6ff;
+  }
+/* header {
+    background-image: url("https://img.freepik.com/free-vector/quiz-game-stage-interior-with-stands-spotlights_107791-13339.jpg");
+    height: 150px;
+} */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#reset {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Rest of your CSS styles */
+
+h1 {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    padding: 10px 0;
+    text-shadow: 0 0 10px #00f6ff;
+} 
+button {
+    display: block; /* this will make the button a block-level element, allowing it to have a width */
+    margin: 10px auto; /* this will center the button horizontally */
+    padding: 10px 20px; /* this will add some padding inside the button */
+    border: 1px solid #00f6ff; /* this will give the button a 1px solid border */
+    border-radius: 5px;;
+  }
+  
+.question-display {
+    
+    font-size: 32px;
+    text-align: center;
+    margin: auto 0;
+}
+
+/* .background{
+    color: #5982c5;
+    background-color: #eac435;
+    font-family:'Bangers', cursive;
+} */
+.radio-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    /* margin-right: 20px; */
+    /* background-color: aliceblue; */
+}
+/* .radio-container input {
+    grid-column: 1 / 2;
+  }
+  
+  .radio-container label {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+  } */
+
+  #show-answer, #end-game, #final-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 150%;
+
+  }
+/* .radio-container label:not(:last-child) {
+    margin-right: 10px;
+  } */
+  
+.options-container, .options-container2 {
+    display: inline flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 100%;
+    max-height: 100%;
+
+}
+button:hover {
+    background-color: #00f6ff;
+    color: #0f0f0f;
+  }
+.form-control {
+    border: 1px solid #00f6ff; ;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: #00f6ff;
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 700px;
+    /* background-color: #432; */
+    gap: 20px;
+
+}

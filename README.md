@@ -1,5 +1,5 @@
 # Trivia App
-This app was created in teh seocnd week of the bootcamp, as practice on JavaScript functions and asynchronous programming, 
+This app was created in the second week of the bootcamp, as practice on JavaScript functions and asynchronous programming, 
 particularly fetching from API's. 
 
 

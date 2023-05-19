@@ -68,13 +68,32 @@ async function getData() {
     radioContainer.appendChild(miniRadioContainer);
   }
 
-  // Create content container and append question elements
-  let contentDiv = document.createElement("div");
-  contentDiv.setAttribute("class", "contentDiv");
-  contentDiv.appendChild(questionNumber);
-  contentDiv.appendChild(question);
-  contentDiv.appendChild(radioContainer);
+ 
+  //Remove dropdown menus when the game starts
+  document.querySelector(".options-container").style.display = "none";
+  // document.querySelector(".options-container2").style.display = "none";
 
+
+  let categoryChoiceText = document.querySelector("#category option:checked").textContent;
+  let difficultyChoiceText = document.querySelector("#difficulty option:checked").textContent;
+
+
+//Create p tags to show player what category and level they have chosen
+  let categoryText = document.createElement("p");
+  categoryText.textContent = `Category: ${categoryChoiceText}`;
+
+  let difficultyText = document.createElement("p");
+  difficultyText.textContent = `Difficulty: ${difficultyChoiceText}`;
+
+   // Create content container and append question elements
+   let contentDiv = document.createElement("div");
+   contentDiv.appendChild(categoryText);
+   contentDiv.appendChild(difficultyText);
+   contentDiv.setAttribute("class", "contentDiv");
+   contentDiv.appendChild(questionNumber);
+   contentDiv.appendChild(question);
+   contentDiv.appendChild(radioContainer);
+ 
   // Append content container to the document
   document.body.appendChild(contentDiv);
 
@@ -195,7 +214,7 @@ function checkAnswer() {
     reveal.textContent = "Correct Answer";
     score++;
   } else {
-    reveal.textContent = `Wrong Answer. \n The right answer was ${correctAnswer}`;
+    reveal.textContent = `Wrong Answer. \n The right answer is "${correctAnswer}"`;
   }
   document.body.appendChild(reveal);
 

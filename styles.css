@@ -10,11 +10,9 @@
 body {
 
     color: #00f6ff;
+   
   }
-/* header {
-    background-image: url("https://img.freepik.com/free-vector/quiz-game-stage-interior-with-stands-spotlights_107791-13339.jpg");
-    height: 150px;
-} */
+
 
 .button-container {
   display: flex;
@@ -52,6 +50,10 @@ button {
     margin: auto 0;
 }
 
+
+.correct-answer{
+  color:aquamarine
+}
 .radio-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -72,6 +74,10 @@ button {
     display: flex;
     align-items: center;
   } */
+
+  .noQ-container{
+    margin-top: 20px;
+  }
 
   #show-answer, #end-game, #final-score {
     display: flex;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trivia Game</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 
@@ -23,7 +23,7 @@
 
     <section class="options-container">
       <select id="category" name="trivia_category" class="form-control" required>
-          <option value="any">Category</option>
+          <option value="">Category</option>
           <option value="9">General Knowledge</option>
           <option value="10">Entertainment: Books</option>
           <option value="11">Entertainment: Film</option>
@@ -50,20 +50,19 @@
           <option value="32">Entertainment: Cartoon &amp; Animations</option>
         </select>
         <select id="difficulty" name="trivia_difficulty" class="form-control" >
-            <option value="any">Difficulty</option>
+            <option value="">Difficulty</option>
             <option value="easy">Easy</option>
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
         </select>
-        </section>
-        <section class="options-container2">
+        <div class="noQ-container">
           <select id="noQ" class="form-control" >
           <option># of Questions</option>
           <option value = 3>3</option>
           <option value = 5>5</option>
           <option value = 10>10</option>
           <option value = 20>20</option>
-        
+        </div>
         </select>
         </section>
         <div class="button-container">

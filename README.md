@@ -5,6 +5,12 @@ particularly fetching from API's.
 
 ## Demo
 
+
+
+https://github.com/anjaliruth/TRIVIA/assets/124257618/025f7563-e0fe-4d3e-aa78-973910408d65
+
+
+
 # Additional features for the next iteration: 
 
 1. Adding a random button to select random Categories, Difflculty Level and no. of questions for the user.

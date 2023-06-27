@@ -9,7 +9,7 @@ particularly fetching from API's.
 
 https://github.com/anjaliruth/TRIVIA/assets/124257618/025f7563-e0fe-4d3e-aa78-973910408d65
 
-
+Try it out here: https://anjaliruth.github.io/TRIVIA/
 
 # Additional features for the next iteration: 
 
